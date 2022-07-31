@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right, #025159, #C4EEF2);
+}
+
+#tasks-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;   
+}
+
+#tasks-main > h1 {
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #f6b566;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.438);
+}
+
+#task-title{
+    width: 500px;
+    height: 50px;   
+    padding: 15px;
+    outline: none;
+}
+
+#task-title::placeholder {
+    font-size: 20px;
+}
+
+#add-tasks{
+    position: absolute;
+    margin-top: 1px;
+    height: 48px;
+    width: 50px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#add-tasks:hover{
+    background-color: #F28705;
+}
+
+
+ion-icon {
+   font-size: 25px;
+   padding-top: 3px;
+}
+
+/*tasks conteiner*/
+
+#tasks-list-conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;   
+}
+
+#tasks-list-conteiner > h1{
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #f6b566;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.553);
+}
+
+#tas-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+#task-list > li{
+    width: 500px;
+    height: 50px;
+    position: relative;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.39);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.355);
+    margin-bottom: 25px;
+    padding-left: 15px;
+    padding-top: 15px;
+    transition: 1s;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    border: none;
+}
+
+#task-list > li > ion-icon{
+    position: absolute;
+    top: 0;
+    width: 30px;
+    height: 40px;
+    transition: 0.5s;
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+}
+
+.done-btn{
+    right: 40px;
+}
+
+.done-btn:hover{
+    color: white;
+    background-color: #09E01B;
+}
+
+.remove-btn{
+    right: 0;
+}
+
+.remove-btn:hover{
+    color: white;
+    background-color: #ED0927;
+}
+
+.hide{
+    display: none;
+}
+
+#task-list li.done{
+    color: white;
+    background-color: #013c42;
+    text-decoration: line-through; 
+    
+}
+
+#roda-pe{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+#roda-pe > p > a{
+    text-decoration: none;
+    color: #F28705;
+}
+
+/*responsivo*/
+
+@media (max-width: 620px){
+    #task-title{
+        width: 300px;
+        height: 40px;   
+        padding: 11px;
+        outline: none;
+        
+    }
+
+    #task-list > li{
+        width: 300px;
+        height: 40px;
+    }
+
+    #add-tasks{
+        height: 39px;
+        width: 40px;
+    }
+
+    #tasks-main > h1{
+        font-size: 24px;
+    }
+
+    #tasks-list-conteiner > h1{
+        font-size: 24px;
+    }
+
+}

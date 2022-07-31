@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Add Tarefas</title>
+</head>
+<body>
+
+    <main>
+        <div id="tasks-main">
+            <h1>Salve a sua próxima tarefa: </h1>
+            <form action="" id="add-task-form">
+                <input type="text" id="task-title" placeholder="O que você vai fazer?">
+                <button type="submit" id="add-tasks">
+                    <ion-icon name="add-outline"></ion-icon>
+                </button>
+            </form>
+        </div>
+
+        <div id="tasks-list-conteiner">
+            <h1>Essas são suas tarefas: </h1>
+            <ul id="task-list">
+                <li id="task-li" class="hide template">
+                    <span id="span-title"></span>
+                    <ion-icon class="done-btn" name="checkmark-outline"></ion-icon>
+                    <ion-icon class="remove-btn" name="close-outline"></ion-icon>
+                </li>
+            </ul>
+        </div>
+    </main>
+    
+    <footer id="roda-pe">
+        <p>&copy; Todos os direitos reservados - <a href="https://www.linkedin.com/in/lucas-n-correa/">Lucas Corrêa</a></p>
+    </footer>
+    
+    <script type ="module" src ="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script> 
+    <script nomodule src ="https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js" > </script>
+    <script src="js/app.js"></script>
+</body>
+</html>
